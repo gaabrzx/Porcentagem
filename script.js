@@ -8,7 +8,7 @@ function calcularValorFinal() {
   const porcentagem = parseFloat(porcentagemInput.value);
   const valorFinal = valorInicial + (valorInicial * porcentagem / 100);
   valorFinalSpan.textContent = isNaN(valorFinal) ? '' : valorFinal.toFixed(2);
-  valorRangeSpan.textContent = porcentagem; // Atualiza o valor do span
+  valorRangeSpan.textContent = porcentagem + "%"; // Atualiza o valor do span
 }
 
 valorInicialInput.addEventListener('input', calcularValorFinal);
